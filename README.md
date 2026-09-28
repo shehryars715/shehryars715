@@ -25,7 +25,7 @@ Hand it a lab manual; an agent writes, runs and fixes the code.
 **GSD Dashboard** · Askari Bank Digital Lab, 2026<br>
 An agentic operations platform answering questions across lease, capex and procurement for 700+ staff.
 
-<p align="center"><a href="https://www.linkedin.com/in/shehryars715/"><img src="assets/gsd.svg" width="520" alt="GSD Dashboard: a question goes to a Logistic Regression router (routing accuracy 88% to 98% on a 45-query blind set). One-domain questions go to the lease, capex and procurement pipelines; cross-module ones go to a tool-calling agent with 24 tools and at most 10 steps. Either way the SQL reaches the registers through three guardrails: a constrained prompt, a SELECT-only validator and a read-only transaction."></a></p>
+<p align="center"><a href="https://www.linkedin.com/in/shehryars715/"><img src="assets/gsd-dashboard.svg" width="520" alt="Schematic of the GSD Dashboard for 700+ staff: a sidebar with Dashboard, Lease register, Reports, Audit log and Users; a scanned lease agreement is dropped in, its 38 fields are extracted, and it lands as a new row in the lease register. Built with React, FastAPI, Docling, GPT-OSS and MySQL."></a></p>
 
 **[Finetune](https://github.com/shehryars715/Finetune)** · models on [Hugging Face](https://huggingface.co/shehryars715)<br>
 Instruction-tuning two Pythia-410M checkpoints, full-parameter.
