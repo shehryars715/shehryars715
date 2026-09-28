@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="280" viewBox="0 0 880 280" role="img" aria-label="Research on how models behave feeds agents that hold up, which ship on backends; people using them raise the next research question.">
+<rect x="16" y="24" width="240" height="150" rx="10" fill="#151b23" stroke="#3d444d" stroke-width="1.5"/>
+<text x="36" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="start" fill="#4493f8" letter-spacing="1.5">01  RESEARCH</text>
+<text x="36" y="90" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="start" fill="#f0f6fc">How models behave</text>
+<text x="36" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400" text-anchor="start" fill="#9198a1">position bias in judges</text>
+<text x="36" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400" text-anchor="start" fill="#9198a1">SFT on early checkpoints</text>
+<line x1="264" y1="99.0" x2="305" y2="99.0" stroke="#4493f8" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M304 94.0 L312 99.0 L304 104.0 z" fill="#4493f8"/>
+<text x="288.0" y="89.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="middle" fill="#9198a1">verify</text>
+<rect x="320" y="24" width="240" height="150" rx="10" fill="#151b23" stroke="#3d444d" stroke-width="1.5"/>
+<text x="340" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="start" fill="#4493f8" letter-spacing="1.5">02  AGENTS</text>
+<text x="340" y="90" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="start" fill="#f0f6fc">Agents that hold up</text>
+<text x="340" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400" text-anchor="start" fill="#9198a1">write → run → read → fix</text>
+<text x="340" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400" text-anchor="start" fill="#9198a1">trust runs, not claims</text>
+<line x1="568" y1="99.0" x2="609" y2="99.0" stroke="#4493f8" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M608 94.0 L616 99.0 L608 104.0 z" fill="#4493f8"/>
+<text x="592.0" y="89.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="middle" fill="#9198a1">ship</text>
+<rect x="624" y="24" width="240" height="150" rx="10" fill="#151b23" stroke="#3d444d" stroke-width="1.5"/>
+<text x="644" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="start" fill="#4493f8" letter-spacing="1.5">03  BACKENDS</text>
+<text x="644" y="90" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="start" fill="#f0f6fc">Where they run</text>
+<text x="644" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400" text-anchor="start" fill="#9198a1">FastAPI · SSE · SQL</text>
+<text x="644" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="400" text-anchor="start" fill="#9198a1">Docker, deployed on AWS</text>
+<path d="M744.0 182 V220 H136.0 V189" fill="none" stroke="#4493f8" stroke-width="1.5" stroke-dasharray="5 5"/>
+<path d="M131.0 190 L136.0 182 L141.0 190 z" fill="#4493f8"/>
+<text x="440.0" y="246" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" text-anchor="middle" fill="#9198a1">people use it, break it, and raise the next question</text>
+</svg>
