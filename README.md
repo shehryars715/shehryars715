@@ -1,59 +1,57 @@
 # Shehryar Ali
 
-Data Science at NUST, Islamabad.
+**AI Engineer** · Data Science, NUST Islamabad
 
-I research how language models actually behave, build agent harnesses that don't take
-their word for it, and write the backends those agents run on.
+I study how language models actually behave, then build with them: agents, the backends they run on, and the models underneath. Away from the keyboard, I'm reading or writing.
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/loop-dark.svg">
-    <img src="assets/loop-light.svg" width="880" alt="Research on how models behave feeds agents that hold up, which ship on backends. People using them raise the next research question.">
-  </picture>
-</p>
+Before: AI Engineer Intern, Askari Bank Digital Lab.
 
-- **Now:** beta-testing [Labs-Agent](https://github.com/shehryars715/Lab-Agent) with my classmates
-  before a public release. You give it a lab manual; an agent writes each task, runs it, reads
-  the real output and fixes it.
-- **Under review:** *Position Bias Breaks the LLM Mirror Test*, a placebo-controlled study of
-  whether models can recognise their own writing. Mostly, it measures which letter a model likes.
-- **Before:** AI engineer intern at Askari Bank Digital Lab. I led an agentic operations
-  platform for 700+ staff: a router, a 24-tool orchestrator, and NL2SQL that is read-only by
-  construction. Also research assistant work on LLM fine-tuning and Urdu data at NUST.
+<p align="center"><a href="https://github.com/shehryars715?tab=repositories"><img src="assets/interests.svg" width="520" alt="LLM research feeds agents (verify), agents ship on backends, and people using what ships raise the next research question."></a></p>
 
-## Selected work
+## What I work on
 
-**[Labs-Agent](https://github.com/shehryars715/Lab-Agent)** · Python, LangGraph, FastAPI, React<br>
-An agent harness for CS lab work. A fresh solver agent per task, four tools, turn and cost
-budgets, and a task only counts as done after a real clean run. Checked by a 10-case eval
-suite and 400+ tests.
+- **LLM research & fine-tuning**: full-parameter SFT with TRL, completion-only loss, placebo-controlled evals, log-prob scoring, HF Transformers
+- **Agents & tool use**: LangGraph, tool calling and tool design, guardrails, structured output (Pydantic), agent evals, prompt caching
+- **Backend & APIs**: FastAPI, REST and SSE, SQL and NL2SQL, JWT auth, Docker Compose, GitLab CI/CD
+- **ML & data**: PyTorch, scikit-learn, pandas, FAISS, MCTS self-play
 
-**[MirrorTest](https://github.com/shehryars715/MirrorTest)** · Python, Transformers, statistics<br>
-Eight open judges, 43,048 pairwise runs, placebo and likelihood controls. Llama-3.2-3B
-answered "A" on 100% of 2,616 runs, which averaging reports as a harmless 0.500.
+## What I've built
 
-**[Finetune](https://github.com/shehryars715/Finetune)** · PyTorch, TRL<br>
-Full-parameter SFT of two Pythia-410M pretraining checkpoints on Alpaca. The tuned models
-learned what an answer looks like, not how to get it right. Both are on
-[Hugging Face](https://huggingface.co/shehryars715), with 250+ downloads a month.
+**[Labs-Agent](https://github.com/shehryars715/Lab-Agent)** · in beta with my classmates<br>
+Hand it a lab manual; an agent writes, runs and fixes the code.
 
-**[AlphaConnect4](https://github.com/shehryars715/AI_Semester_Project)** · PyTorch, MCTS<br>
-Monte Carlo tree search guided by a policy/value network trained on self-play. The first
-neural generation beat plain MCTS 81.5 to 18.5 over 100 games at 0.5 s a move.
+<p align="center"><a href="https://github.com/shehryars715/Lab-Agent"><img src="assets/labs-agent.svg" width="520" alt="Labs-Agent flowchart: a lab manual is read in one LLM call; gates check it can run here, and stop with a reason if not; then the agent writes taskN.py and runs it. If the exit code is 0 the task has passed and becomes your files; if not, it reads the error, fixes the code and writes again."></a></p>
 
-## Notes to self
+**GSD Dashboard** · Askari Bank Digital Lab, 2026<br>
+An agentic operations platform answering questions across lease, capex and procurement for 700+ staff.
 
-Things my projects keep teaching me:
+<p align="center"><a href="https://www.linkedin.com/in/shehryars715/"><img src="assets/gsd.svg" width="520" alt="GSD Dashboard: a question goes to a Logistic Regression router (routing accuracy 88% to 98% on a 45-query blind set). One-domain questions go to the lease, capex and procurement pipelines; cross-module ones go to a tool-calling agent with 24 tools and at most 10 steps. Either way the SQL reaches the registers through three guardrails: a constrained prompt, a SELECT-only validator and a read-only transaction."></a></p>
 
-- An agent with no approved way to stop will keep going. Give it one.
-- An average can hide a broken judge. Run the placebo.
-- A model saying it passed is a claim. A clean run is evidence.
-- A prompt asks. A guard guarantees. Ship both.
+**[Finetune](https://github.com/shehryars715/Finetune)** · models on [Hugging Face](https://huggingface.co/shehryars715)<br>
+Instruction-tuning two Pythia-410M checkpoints, full-parameter.
 
-## Tools I reach for
+<p align="center"><a href="https://github.com/shehryars715/Finetune"><img src="assets/finetune.svg" width="520" alt="Line chart, Finetune: validation loss of the step-50K Pythia-410M checkpoint during one epoch of full-parameter SFT on Alpaca, falling from 1.75 at step 250 to 1.57 at step 1,500; mean token accuracy rose from 58.1% to 61.3%."></a></p>
 
-Python, PyTorch, Hugging Face, LangGraph, FastAPI, SQL, Docker, React.
+**[MirrorTest](https://github.com/shehryars715/MirrorTest)** · paper under review<br>
+Can LLM judges spot their own writing? Mostly, they just favour a letter.
 
-## Contact
+<p align="center"><a href="https://github.com/shehryars715/MirrorTest"><img src="assets/mirrortest.svg" width="520" alt="Dot plot, MirrorTest placebo: on pairs where both answers are the judge&#x27;s own, the share of runs picking A. Qwen2.5-0.5B 98.9%; Qwen2.5-1.5B 9.7%; Qwen2.5-3B 34.9%; Qwen2.5-7B 98.9%; Qwen2.5-14B 72.0%; Gemma-2-9B 99.7%; Llama-3.2-3B 100.0%; Mistral-7B 99.3%. Chance is 50%; none is close."></a></p>
 
-shehryar0707@gmail.com · [LinkedIn](https://www.linkedin.com/in/shehryars715/) · [Hugging Face](https://huggingface.co/shehryars715)
+## Skills
+
+| Area | Stack |
+|---|---|
+| **Languages** | Python · TypeScript / JavaScript · SQL · C++ · LaTeX |
+| **LLMs & fine-tuning** | Hugging Face Transformers · TRL · full-parameter SFT · completion-only loss · LLaMA · Qwen · Pythia · RAG · prompt engineering · zero-shot classification (BART-MNLI) · Gemini API · Ollama |
+| **Agents** | LangGraph · LangChain · deepagents · tool calling and tool design · guardrails · structured output (Pydantic) · agent evals · context engineering · prompt caching · human-in-the-loop · NL2SQL |
+| **Evaluation & research** | placebo controls · position counterbalancing · first-token log-prob scoring · AUROC and bootstrap CIs · blind eval sets |
+| **ML & data** | PyTorch · scikit-learn · Logistic Regression · LightGBM · SMOTE · MCTS self-play · YOLOv8 · MediaPipe · pandas · NumPy · FAISS · ETL pipelines · data cleaning and annotation |
+| **Documents & OCR** | Docling · Tesseract OCR · JSON-schema validation · fuzzy matching |
+| **Backend & web** | FastAPI · REST · SSE · JWT auth · MySQL · Supabase · React · Vite · Tailwind CSS · Streamlit |
+| **DevOps & tools** | Docker · Docker Compose · GitLab CI/CD · Git · AWS Lightsail · Trivy |
+
+## Say hi
+
+<p align="center"><a href="mailto:shehryar0707@gmail.com"><img src="assets/hi-mail.svg" width="206" alt="Email: shehryar0707@gmail.com"></a> <a href="https://www.linkedin.com/in/shehryars715/"><img src="assets/hi-linkedin.svg" width="206" alt="LinkedIn: in/shehryars715"></a> <a href="https://huggingface.co/shehryars715"><img src="assets/hi-hf.svg" width="206" alt="Hugging Face: shehryars715"></a></p>
+
+<p align="center"><sub>shehryar0707@gmail.com</sub></p>
